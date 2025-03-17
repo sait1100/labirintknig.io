@@ -1,0 +1,154 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Фон сайта черный */
+    color: #fff; /* Белый текст */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 2px solid #444;
+}
+
+.header-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.header-image img {
+    width: 100%; /* Вернули исходный размер */
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Стили для галереи на главной */
+.gallery {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gallery-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Стили для галереи книг */
+.book-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+}
+
+.book-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.book-item {
+    text-align: left;
+    max-width: 400px;
+}
+
+.book-item img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.book-item img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+}
+
+p {
+    font-size: 0.9em;
+    color: white;
+    text-align: left;
+}
+
+/* Стили для кнопок */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #777; /* Серый цвет кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
